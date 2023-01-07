@@ -13,7 +13,7 @@ function Home() {
   //   const content = await import(`../content/${home}.md`);
   //   return { props: { content: content.default } };
   // };
-  let { title, cats } = attributes;
+  let { hero_title } = attributes;
   return (
     <>
       <Head>
@@ -126,7 +126,9 @@ function Home() {
           </a>
         </div>
       </main> */}
+      <h1>{hero_title}</h1>
       <HomeContent />
+      {/* <HomeContent />
       <article>
         <h1>{title}</h1>
         <HomeContent />
@@ -138,7 +140,7 @@ function Home() {
             </li>
           ))}
         </ul>
-      </article>
+      </article> */}
     </>
   );
 }
